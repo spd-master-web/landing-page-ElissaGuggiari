@@ -4,6 +4,7 @@
   /* var(--padding) */
   --color-white: white;
   --color-black: black;
+  --color-orange: #f5b700;
 }
 
 
@@ -20,11 +21,11 @@ html {
 body {
   margin: 0;
   height: 100%;
-  background-color: #ffffff;
+  background-color: var(--color-white);
 }
 
 main {
-  background: linear-gradient(to bottom, #F5B700, var(--color-white));
+  background: linear-gradient(to bottom, var(--color-orange), var(--color-white));
 }
 
 /* FONT */
@@ -79,7 +80,7 @@ a {
   font-size: 24px;
   line-height: 30px;
   text-decoration: none;
-  color: black; 
+  color: black;
 }
 
 a:visited {
@@ -96,16 +97,15 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 48px;
-  gap: 1020px;
 
   position: fixed;
-  width: 1920px;
+  width: 100vw;
   height: 100px;
 
   z-index: 9;
 }
 
-.navbar_main {
+.navbar-main {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -116,7 +116,8 @@ header {
   height: 50px;
 }
 
-.navbar_main li {
+.navbar-main li,
+.navbar-sides {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -131,7 +132,11 @@ header {
 }
 
 .navbar-active {
-  background: linear-gradient(to bottom, #F5B700, var(--color-white));
+  background: linear-gradient(to bottom, var(--color-orange), var(--color-white));
+}
+
+.navbar:hover {
+  background: linear-gradient(to bottom, var(--color-orange), var(--color-white));
 }
 
 
@@ -143,6 +148,18 @@ header {
 }
 
 .hoodie {}
+
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  font-family: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
 
 .hoodie-customization {}
 
@@ -204,7 +221,6 @@ footer {
   padding: var(--padding);
 
 }
-
 
 .footer-flex {
   display: flex;

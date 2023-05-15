@@ -7,7 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://fonts.googleapis.com/css?family=Slabo+13px&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.cdnfonts.com/css/slabo-13px" rel="stylesheet">
 
@@ -21,10 +20,10 @@
 
   <!-- HEADER -->
   <header>
-    <a href="index.html">
+    <a href="index.html" class="navbar-sides">
       home</a>
     <nav>
-      <ul class="navbar_main">
+      <ul class="navbar-main">
         <li>
           <a href="tickets.html">
             tickets</a>
@@ -47,6 +46,8 @@
         </li>
       </ul>
     </nav>
+    <a href="#" class="navbar-sides">
+      search</a>
   </header>
 
   <!-- MARKET SECTION -->
@@ -54,34 +55,40 @@
 
     <section class="hoodie">
       <div class="hoodie-details">
-        <img src="img/icon-arrow-left.png" alt=""  width="20" height="37">
+        <img src="img/icon-arrow-left.png" alt="" width="20" height="37">
         <img src="img/hoodie.png" alt="The front view of a blue hoodie" width="890" height="894">
         <img src="img/icon-arrow-right.png" alt="" width="20" height="37">
       </div>
       <div class="hoodie-customization">
         <h4>Gamer hoodie</h4>
         <p>44.00$</p>
-        <a href="#">Customize</a>
+        <button><h4>Customize</h4></button>
         <div class="dimension-choice">
-          <p>S</p>
-          <p>M</p>
-          <p>L</p>
+          <button>
+            <p>S</p>
+          </button>
+          <button>
+            <p>M</p>
+          </button>
+          <button>
+            <p>L</p>
+          </button>
         </div>
         <div class="color-choice">
-          <img src="img/color-black.png" alt="">
-          <img src="img/color-gray.png" alt="">
-          <img src="img/color-white.png" alt="">
-          <img src="img/color-orange.png" alt="">
-          <img src="img/color-red.png" alt="">
-          <img src="img/color-blue.png" alt="">
+          <button> <img src="img/color-black.png" alt=""></button>
+          <button> <img src="img/color-gray.png" alt=""></button>
+          <button> <img src="img/color-white.png" alt=""></button>
+          <button> <img src="img/color-orange.png" alt=""></button>
+          <button> <img src="img/color-red.png" alt=""></button>
+          <button> <img src="img/color-blue.png" alt=""></button>
         </div>
         <div class="design-choice">
-          <img src="img/icon-pic.png" alt="">
-          <img src="img/icon-text.png" alt="">
-          <img src="img/icon-upload.png" alt="">
-          <img src="img/icon-plus.png" alt="">
-          <img src="img/icon-save.png" alt="">
-          <img src="img/icon-cart.png" alt="">
+          <button> <img src="img/icon-pic.png" alt=""></button>
+          <button> <img src="img/icon-text.png" alt=""></button>
+          <button> <img src="img/icon-upload.png" alt=""></button>
+          <button> <img src="img/icon-plus.png" alt=""></button>
+          <button> <img src="img/icon-save.png" alt=""></button>
+          <button> <img src="img/icon-cart.png" alt=""></button>
         </div>
         <a href="#">Buy now</a>
       </div>
@@ -90,22 +97,30 @@
     <section class="recomendations">
       <div class="chip">
         <img src="img/long-shirt.png" alt="A beautiful blue long sleeved shirt" width="591" height="729">
-        <a href="#"><h4>Gamer long sleeved</h4></a>
+        <a href="#">
+          <h4>Gamer long sleeved</h4>
+        </a>
         <p>22.00$</p>
       </div>
       <div class="chip">
         <img src="img/shirt.png" alt="A beautiful blue short sleeved shirt" width="1106" height="1214">
-        <a href="#"><h4>Gamer short sleeved</h4></a>
+        <a href="#">
+          <h4>Gamer short sleeved</h4>
+        </a>
         <p>22.00$</p>
       </div>
       <div class="chip">
         <img src="img/cap.png" alt="A beautiful blue cap" width="560" height="386">
-        <a href="#"><h4>Gamer cap</h4></a>
+        <a href="#">
+          <h4>Gamer cap</h4>
+        </a>
         <p>12.00$</p>
       </div>
       <div class="chip">
         <img src="img/controller.png" alt="A beautiful blue controller" width="1563" height="1111">
-        <a href="#"><h4>Gamer elite</h4></a>
+        <a href="#">
+          <h4>Gamer elite</h4>
+        </a>
         <p>66.00$</p>
       </div>
     </section>
@@ -166,13 +181,12 @@
   </footer>
 
 
-  
   <!-- SCRIPT START HERE -->
-
   <script>
     // console
     console.log("hello, I am robot");
   </script>
+
 </body>
 
 </html>
