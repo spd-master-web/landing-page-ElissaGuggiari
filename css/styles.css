@@ -2,9 +2,10 @@
 :root {
   --padding: 24px;
   /* var(--padding) */
-  --color-white: white;
-  --color-black: black;
-  --color-orange: #f5b700;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-orange: #F5B700;
+  --color-green: #CBFF5B;
 }
 
 
@@ -29,7 +30,6 @@ main {
 }
 
 /* FONT */
-
 a,
 h1,
 h2,
@@ -135,19 +135,11 @@ header {
   background: linear-gradient(to bottom, var(--color-orange), var(--color-white));
 }
 
-.navbar:hover {
-  background: linear-gradient(to bottom, var(--color-orange), var(--color-white));
-}
-
-
 /* MAIN */
 
 .main {
   padding: var(--padding);
-
 }
-
-.hoodie {}
 
 button {
   border: none;
@@ -161,22 +153,121 @@ button {
 }
 
 
-.hoodie-customization {}
+.CTA {
+  background: var(--color-white);
+  text-align: center;
 
-.dimension-choice {}
+  width: 147px;
+  height: 50px;
 
-.color-choice {}
+  padding: 8px 16px;
 
-.design-choice {}
+  border: 1px solid var(--color-black);
+  border-radius: 35px;
+}
 
-.recomendations {}
+/* HOODIE */
 
-.chip {}
+.hoodie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hoodie-details {
+  width: 48%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+.hoodie-details img {
+  width: 80%;
+  height: auto;
+  margin: 0 10px;
+}
+
+.hoodie-customization {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.design-choice,
+.color-choice,
+.dimension-choice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, auto);
+  gap: 10px;
+  margin: var(--padding);
+}
+
+/* CHIPS */
+.chips-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.chip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+
+  border: 1px solid var(--color-black);
+  padding: var(--padding);
+  margin-bottom: 10px;
+}
+
+.chip img {
+  max-width: 100%;
+  height: auto;
+}
+
+.bottom {
+  margin-top: auto;
+}
+
+
+/* STICKY */
+
+.highlight {
+  width: 100%;
+  height: 80px;
+  padding: var(--padding);
+
+  border top: 1px solid var(--color-black);
+  border bottom: 1px solid var(--color-black);
+  border: 1px solid var(--color-black);
+
+  z-index: 9;
+}
+
+.green {
+  background: var(--color-green);
+}
+
+.orange {
+  background: var(--color-orange);
+}
 
 
 /* FAQ */
 .faq {
-  background: linear-gradient(to bottom, var(--color-white), #CBFF5B);
+  background: linear-gradient(to bottom, var(--color-white), var(--color-green));
   padding: var(--padding);
 }
 
