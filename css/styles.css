@@ -1,0 +1,62 @@
+/* ROOT */
+:root {
+  /* --padding: 20px; */
+  /* var(--padding) */
+  --main-bg-color: white;
+}
+
+/* INITIAL RULES */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+main {
+  background: linear-gradient(to bottom, #F5B700,  var(--main-bg-color));
+}
+
+/* HEADER / NAVIGATION */
+
+header {
+  background-color: var(--main-bg-color);
+}
+
+.navbar_main {}
+
+.navbar_main li {
+}
+
+/* FOOTER */
+
+footer {
+  background-color:  var(--main-bg-color);
+}
+
+/* CLASSES */
+
+.hero {
+}
+
+.top {}
+
+.marketplace {}
+
+.discover {}
+
+.donate {
+  background-color: #5CB8FF;
+}
+
+.faq {
+  background: linear-gradient(to bottom,  var(--main-bg-color), #CBFF5B);
+}
