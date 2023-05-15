@@ -31,9 +31,28 @@ main {
 
 header {
   background-color: var(--color-white);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  gap: 1020px;
+
+  position: fixed;
+  width: 1920px;
+  height: 98px;
 }
 
-.navbar_main {}
+.navbar_main {display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+  
+  width: 670px;
+  height: 50px;}
 
 .navbar_main li {
   display: flex;
@@ -41,7 +60,7 @@ header {
   justify-content: center;
   align-items: flex-end;
   padding: 8px 16px;
-  
+
   width: 130px;
   height: 50px;
 
@@ -53,22 +72,53 @@ header {
   background: linear-gradient(to bottom, #F5B700, var(--color-white));
 }
 
+
+/* MAIN */
+
+.main {}
+
+.hoodie {}
+
+.hoodie-customization {}
+
+.dimension-choice {}
+
+.color-choice {}
+
+.design-choice {}
+
+.recomendations {}
+
+.chip {}
+
+
+/* FAQ */
+.faq {
+  background: linear-gradient(to bottom, var(--color-white), #CBFF5B);
+}
+
+
 /* FOOTER */
 
 footer {
   background-color: var(--color-white);
 }
 
-/* CLASSES */
-
-.hero {}
-
-.main {}
-
-.faq {
-  background: linear-gradient(to bottom, var(--color-white), #CBFF5B);
-}
+/* DONATE */
 
 .donate {
   background-color: #5CB8FF;
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  left: 1446px;
+  top: 487px;
+  border: 2px solid #000000;
+  border-radius: 50%;
 }
